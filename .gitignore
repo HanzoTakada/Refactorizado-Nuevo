@@ -1,3 +1,5 @@
 /.venv
 /datos.db
 /erDiagram.mmd
+__pycache__/
+*.pyc
