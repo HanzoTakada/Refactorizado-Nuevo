@@ -160,8 +160,8 @@ def vista_perfil(usuario_id):
 
     # Botones
     botones = ft.Row([
-        ft.TextButton("Editar", style=ft.ButtonStyle(color=COLOR_NEGRO), on_click=habilitar_edicion),
-        ft.ElevatedButton("Guardar Cambios", bgcolor=COLOR_VERDE, color=COLOR_BLANCO, on_click=guardar_cambios),
+        ft.TextButton("Editar", style=ft.ButtonStyle(color=colores.COLOR_NEGRO), on_click=habilitar_edicion),
+        ft.ElevatedButton("Guardar Cambios", bgcolor=colores.COLOR_VERDE, color=colores.COLOR_BLANCO, on_click=guardar_cambios),
     ], alignment=ft.MainAxisAlignment.END)
 
     # Distribución visual
@@ -189,7 +189,7 @@ def vista_perfil(usuario_id):
     return ft.Container(
         content=layout,
         padding=20,
-        bgcolor=COLOR_BLANCO,
+        bgcolor=colores.COLOR_BLANCO,
         border_radius=10,
         expand=True
     )

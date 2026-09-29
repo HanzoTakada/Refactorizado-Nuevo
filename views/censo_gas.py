@@ -123,7 +123,7 @@ def vista_gas(pagina: ft.Page):
     boton_añadir = ft.ElevatedButton(
         text="Añadir Registro",
         bgcolor=colores.COLOR_VERDE,
-        color=colores.colores.COLOR_BLANCO,
+        color=colores.COLOR_BLANCO,
         icon=ft.Icons.ADD_ROUNDED,
         style=ft.ButtonStyle(
             shape=ft.RoundedRectangleBorder(radius=10),
@@ -220,7 +220,7 @@ def vista_gas(pagina: ft.Page):
                     ft.Divider(height=1, color="#E0E0E0"),
                     pie_tabla.current
                 ], spacing=0),
-                bgcolor=colores.colores.COLOR_BLANCO,
+                bgcolor=colores.COLOR_BLANCO,
                 padding=15,
                 border_radius=12,
                 border=ft.border.all(1, "#E0E0E0"),
@@ -268,7 +268,7 @@ def vista_registro_gas(pagina: ft.Page = None):
         label="Seleccionar Familia", 
         width=320,
         border_radius=8,
-        bgcolor=colores.colores.COLOR_BLANCO
+        bgcolor=colores.COLOR_BLANCO
     )
     campo_cedula = ft.TextField(label="Cédula", width=200, read_only=True, border_radius=8, bgcolor="#F5F5F5")
     campo_direccion = ft.TextField(label="Dirección", width=350, read_only=True, border_radius=8, bgcolor="#F5F5F5")
@@ -341,7 +341,7 @@ def vista_registro_gas(pagina: ft.Page = None):
     boton_guardar = ft.ElevatedButton(
         "Guardar Registro", 
         bgcolor=colores.COLOR_VERDE, 
-        color=colores.colores.COLOR_BLANCO, 
+        color=colores.COLOR_BLANCO, 
         style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=8)),
         on_click=guardar_registro
     )
@@ -361,7 +361,7 @@ def vista_registro_gas(pagina: ft.Page = None):
 
     return ft.Container(
         content=formulario, 
-        bgcolor=colores.colores.COLOR_BLANCO, 
+        bgcolor=colores.COLOR_BLANCO, 
         padding=30, 
         border_radius=12,
         border=ft.border.all(1, "#E0E0E0"),
